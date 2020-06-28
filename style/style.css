@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root {
+    --verde: #0ba360;
+    --verde-fundo: #097747;
+    --verde-escuro: #305745;
+    --verde-claro: #3cba92;
+    --verde-claro2: #dcfff4;
+    --verde-sombreado: #297a61;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, var(--verde) 0%, var(--verde-claro) 100%);
+    font-family: 'Roboto', sans-serif;
+    color: var(--verde-escuro);
+}
+
+#calculadora-plr {
+    margin: 30px;
+}
+
+#calculadora-plr main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#calculadora-plr main h1 {
+    color: var(--verde-escuro);
+    margin-bottom: 10px;
+}
+
+#calculadora-plr main p {
+    margin-bottom: 20px;
+}
+
+#calculadora-plr main form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#calculadora-plr main form label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#calculadora-plr main form label input {
+    border-radius: 5px;
+    box-shadow: inset 1px 3px 5px var(--verde-escuro);
+    background-color: var(--verde-fundo);
+    width: 250px;
+    border: none;
+    padding: 30px;
+    color: var(--verde-claro2);
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#calculadora-plr main form label input::placeholder {
+    color:var(--verde-escuro);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+#meu-plr  p {
+    text-align: center;
+}
+
+#resultado {
+    font-size: 2.5rem;
+    border: 1px solid var(--verde-escuro);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+footer {
+    font-size: 0.8rem;
+}
+
+footer a {
+    color: var(--verde-fundo);
+    transition: all 0.4s;
+}
+
+footer a:hover {
+    color: var(--verde-claro2);
+}
