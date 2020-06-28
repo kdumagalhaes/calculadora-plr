@@ -10,22 +10,24 @@
     <div id="calculadora-plr">
         <main>
     <h1>Calculadora PLR</h1>
-    <p>Insira os valores e aperte Enter</p>
+    <h3>Insira os valores e aperte Enter</h3>
     <form id="calculadora">
         <label for="meu-salario">Meu salário
-        <input type="number" id="meu-salario" placeholder="Ex.:1500">
+        <input type="number" id="meu-salario" placeholder="Ex.:1500" step="0.010">
         </label>
         <label for="meu-bonus">Meu bônus
-        <input type="number" id="meu-bonus" placeholder="Ex.: 0.5">
+        <input type="number" id="meu-bonus" placeholder="Ex.: 0,5" step="0.010" max="2">
         </label>
         <label for="meses-trabalhados">Meses trabalhados
         <input type="number" id="meses-trabalhados" placeholder="Ex.: 8" max="12">
         </label>
-        <div id="meu-plr">
+        <input type="reset" id="btn-limpar" value="Limpar">
+        <input type="submit" id="btn-calcular" value="Calcular">
 
-        </div>
     </form>
-    <footer>Created by <a href="http://kadumagalhaes.me">Kadu Magalhães</a></footer>
+    <div id="meu-plr">
+    </div>
+    <footer>Feito por <a href="http://kadumagalhaes.me">Kadu Magalhães</a></footer>
         </main>     
     </div>
     <script src="./js/script.js"></script>
